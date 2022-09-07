@@ -1,0 +1,66 @@
+/*
+ * Bootstrap Cookie Alert by Wruczek
+ * https://github.com/Wruczek/Bootstrap-Cookie-Alert
+ * Released under MIT license
+ */
+.cookiealert {
+    background: rgb(12, 11, 9);
+    border-top: 1px solid rgba(205, 164, 94, 0.6);
+    padding: 15px 0;
+
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    margin: 0 !important;
+    z-index: 999;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: all 500ms ease-out;
+    visibility: hidden;
+    font-size: 15px;
+    font-weight: 500;
+    /* border-radius: 0;
+    color: #ecf0f1;
+    background: #212327; */
+}
+
+.cookiealert-btn {
+    margin: 0 0 0 15px;
+    border: 2px solid #cda45e;
+    background: rgba(12, 11, 9, 0.6);
+    color: #fff;
+    border-radius: 50px;
+    padding: 8px 25px;
+    /* text-transform: uppercase; */
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transition: 0.3s;
+  }
+  .cookiealert-btn:hover {
+    background: #cda45e;
+    color: #fff;
+  }
+  @media (max-width: 992px) {
+    .cookiealert-btn {
+      margin: 0 15px 0 0;
+      padding: 8px 20px;
+    }
+  }
+
+.cookiealert.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0%);
+    transition-delay: 1000ms;
+}
+
+.cookiealert a {
+    text-decoration: underline
+}
+
+/* .cookiealert .acceptcookies {
+    margin-left: 10px;
+    vertical-align: baseline;
+} */
